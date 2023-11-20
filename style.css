@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: var(--bg-light);
+}
+
+:root {
+    --primary-color: #000924;
+    --secondary-color: #1CB57D;
+    --third-color: #2DC646;
+    --bg-dark: #0F172A;
+    --bg-light: #F5F5F5;  
+    --bg-input: #D9D9D9;  
+    --text-gray: #323232;
+    --text-placeholder: #525252;
+    --text-light: #ffff;
+    --icon-blue: #0098D8;
+    --icon-rose: #E340E7;
+    --title-gray: #333333;
+    --border-gray: #ABABAB;
+}
+
+header {
+    height: 80px;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.menus > ul > li {
+    list-style: none;
+    font-size: 16px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.menus {
+    height: 100%;
+}
+
+.btn-login {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 28px;
+    color: var(--text-light);
+
+    &:hover {
+        background-color: var(--third-color);
+        transition: 0.5s;
+    }
+}
+
+p {
+    font-family: 'Montserrat';
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 42px;
+}
+
+.logo > img {
+    width: 80%;
+    height: 100%;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.text-wrapper > p {
+    font-size: 24px;
+}
+
+.btn-go-primary {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    min-width: 264px;
+    padding: 8px;
+}
+
+.btn-default {
+    color: var(--text-gray);
+    font-weight: 500;
+    border: 1px solid var(--text-gray);
+    border-radius: 8px;
+    min-width: 264px;
+    padding: 8px;
+}
+
+.text-wrapper > h3 {
+    width: 70%;
+}
