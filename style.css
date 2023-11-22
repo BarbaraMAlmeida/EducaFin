@@ -62,6 +62,8 @@ header {
 
 p {
     font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
 }
 
 
@@ -89,7 +91,9 @@ h3 {
     font-weight: 500;
     border: none;
     border-radius: 8px;
-    min-width: 264px;
+    min-width: 150px;
+    max-width: 264px;
+    width: 264px;
     padding: 8px;
 }
 
@@ -99,7 +103,9 @@ h3 {
     font-weight: 500;
     border: none;
     border-radius: 8px;
-    min-width: 264px;
+    min-width: 150px;
+    max-width: 264px;
+    width: 264px;
     padding: 8px;
 } 
 
@@ -108,7 +114,9 @@ h3 {
     font-weight: 500;
     border: 1px solid var(--text-gray);
     border-radius: 8px;
-    min-width: 264px;
+    min-width: 150px;
+    max-width: 264px;
+    width: 264px;
     padding: 8px;
 }
 
@@ -126,6 +134,10 @@ h3 {
     color: var(--third-color);
     font-weight: 800;
     font-size: 32px;
+}
+
+.title2 {
+    width: 50%;
 }
 
 .title2 > p {
@@ -189,4 +201,93 @@ footer > div > ul {
 
 footer > div > ul > li > a {
     color: var(--text-light);
+}
+
+.header-responsive {
+    border-radius: 0px 0px 0px 16px;
+    position: absolute;
+    height: 80%;
+    top: 80px;
+    right: 0px;
+    background: var(--text-light);
+    display: none;
+}
+
+
+.header-responsive.active {
+    display: block;
+    animation: bannerGo forwards 1s;
+}
+
+@keyframes bannerGo {
+    from{
+      transform: translateX(200px);
+      transition: 1s;
+    }
+    to{
+      transform:translateX(0px);
+      transition: 1s;
+    }
+}
+
+.menus-responsive > ul {
+    padding: 15px;
+    list-style: none;
+}
+
+.menus-responsive > ul > li {
+    margin-top: 20px;
+} 
+
+.menus-responsive > ul > li > a {
+    color: var(--text-gray);
+
+    &:hover {
+        color: var(--secondary-color);
+        transition: 0.3s ease-in-out;
+    }
+} 
+
+.menu-bars {
+    display: none;
+    margin-right: 24px;
+}
+
+
+@media (max-width: 953.98px) {
+    .img-wrapper img {
+        display: none;
+    }
+
+    .buttons-wrapper{
+        margin-bottom: 20px;
+    }
+
+    .img_finance {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640.98px) {
+    .menu-bars {
+        display: block;
+    }
+
+    .menus {
+        display: none;
+    }
+    
+    .title2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 358px) {
+    .btn-go-secondary, .btn-go-primary, .btn-default {
+        width: 150px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
 }
